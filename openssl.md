@@ -14,7 +14,7 @@ openssl rsautl -encrypt -inkey ~/.ssh/id_rsa.pem.pub -pubin -in pass.txt -out pa
 # Decrypt Passphrase
 openssl rsautl -decrypt -inkey ~/.ssh/id_rsa -in pass.txt.enc -out pass.txt
 ```
-(Found Here)[https://kulkarniamit.github.io/whatwhyhow/howto/encrypt-decrypt-file-using-rsa-public-private-keys.html]
+[Found Here](https://kulkarniamit.github.io/whatwhyhow/howto/encrypt-decrypt-file-using-rsa-public-private-keys.html)
 
 ## Encrypt/Decrypt Files with Passphrase
 
@@ -26,4 +26,4 @@ openssl aes-256-cbc -salt -in secrets.txt -out secrets.txt.enc
 # Decrypt:
 openssl aes-256-cbc -d -in secrets.txt.enc -out secrets.txt.new
 ```
-(Found Here)[https://stackoverflow.com/a/16056298/11891816]
+[Found Here](https://stackoverflow.com/a/16056298/11891816)
