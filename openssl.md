@@ -3,6 +3,9 @@
 ## Convert an ssh pub key to rsa pub key
 ```sh
 	ssh-keygen -f ~/.ssh/id_rsa.pub -e -m PKCS8 > ~/.ssh/id_rsa.pem.pub
+
+	# or 
+	openssl rsa -in ~/.ssh/id_rsa -outform PEM -pubout -out public.pem
 ```
 [Found Here](https://superuser.com/a/576558)
 
